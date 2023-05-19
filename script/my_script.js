@@ -3,8 +3,7 @@
 // 2 is paper and 
 // 3 is scissors
 
-let computerPlay = Math.floor(Math.random() * 3 + 1);
-console.log(computerPlay)
+
 
 let rockButton = document.getElementById('my-rock-button');
 
@@ -13,13 +12,34 @@ let paperButton = document.getElementById('my-paper-button');
 let scissorsButton = document.getElementById('my-scissors-button');
 
 rockButton.addEventListener('click', function () {
-    console.log('rock');
+    console.log('user play is rock');
+
+    // Add computer response 
+    let computerPlay = parseInt(Math.floor(Math.random() * 3 + 1));
+
+    if (computerPlay === 1) {
+        console.log('computer plays rock')
+    } else if (computerPlay === 2) {
+        console.log('computer plays paper')
+    } else {
+        console.log('computer plays scissors')
+    }
+
 })
 
 paperButton.addEventListener('click', function () {
-    console.log('paper');
+    console.log('user play is paper');
+
+    // Add computer response 
+    let computerPlay = parseInt(Math.floor(Math.random() * 3 + 1));
+    console.log(computerPlay)
 })
 
 scissorsButton.addEventListener('click', function () {
-    console.log('scissors');
+    console.log('user play is scissors');
+
+    // Add computer response 
+    let computerPlay = parseInt(Math.floor(Math.random() * 3 + 1));
+    console.log(computerPlay)
+
 })
