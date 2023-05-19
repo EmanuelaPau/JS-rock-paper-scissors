@@ -69,6 +69,10 @@ div.my_card-header h1 {
     padding: 10px;
 }
 
+.my_invisible {
+    visibility: hidden;
+}
+
 .my_result {
     width: 220px;
     height: 250px;

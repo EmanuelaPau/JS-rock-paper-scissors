@@ -13,6 +13,12 @@ let scissorsButton = document.getElementById('my-scissors-button');
 
 let userPlay;
 
+const winMessage = document.querySelector('div.my_win');
+
+const looseMessage = document.querySelector('div.my_loose');
+
+const drawMessage = document.querySelector('div.my_draw');
+
 rockButton.addEventListener('click', function () {
     console.log('user play is rock');
     // Add user play value 
@@ -24,12 +30,28 @@ rockButton.addEventListener('click', function () {
     if (computerPlay === 1) {
         console.log('computer plays rock')
         console.log("it's a Draw!")
+
+        // Draw Message 
+        winMessage.classList.remove('visible')
+        looseMessage.classList.remove('visible')
+        drawMessage.classList.add('visible')
+
     } else if (computerPlay === 2) {
         console.log('computer plays paper')
         console.log("Player Lose!")
+
+        // Loose Message 
+        winMessage.classList.remove('visible')
+        looseMessage.classList.add('visible')
+        drawMessage.classList.remove('visible')
     } else {
         console.log('computer plays scissors')
         console.log("Player Wins!")
+
+        // Win Message 
+        winMessage.classList.add('visible')
+        looseMessage.classList.remove('visible')
+        drawMessage.classList.remove('visible')
     }
 
 })
@@ -47,12 +69,29 @@ paperButton.addEventListener('click', function () {
     if (computerPlay === 1) {
         console.log('computer plays rock')
         console.log("Player Wins!")
+
+        // Win Message 
+        winMessage.classList.add('visible')
+        looseMessage.classList.remove('visible')
+        drawMessage.classList.remove('visible')
     } else if (computerPlay === 2) {
         console.log('computer plays paper')
         console.log("It's a Draw!")
+
+        // Draw Message 
+        winMessage.classList.remove('visible')
+        looseMessage.classList.remove('visible')
+        drawMessage.classList.add('visible')
     } else {
         console.log('computer plays scissors')
         console.log("Player Lose!")
+
+        // Loose Message 
+        winMessage.classList.remove('visible')
+        looseMessage.classList.add('visible')
+        drawMessage.classList.remove('visible')
+
+
     }
 })
 
@@ -69,12 +108,27 @@ scissorsButton.addEventListener('click', function () {
     if (computerPlay === 1) {
         console.log('computer plays rock')
         console.log("Player Lose!")
+
+        // Loose Message 
+        winMessage.classList.remove('visible')
+        looseMessage.classList.add('visible')
+        drawMessage.classList.remove('visible')
     } else if (computerPlay === 2) {
         console.log('computer plays paper')
         console.log("Player Wins!")
+
+        // Win Message 
+        winMessage.classList.add('visible')
+        looseMessage.classList.remove('visible')
+        drawMessage.classList.remove('visible')
     } else {
         console.log('computer plays scissors')
         console.log("It's a Draw!")
+
+        // Draw Message 
+        winMessage.classList.remove('visible')
+        looseMessage.classList.remove('visible')
+        drawMessage.classList.add('visible')
     }
 
 })
