@@ -20,10 +20,84 @@
     </head>
 
     <body>
-        <div>
-            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="" placeholder="Enter number">
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
+        <header class=" my_container my_margin-top mb-4">
+            <h1 class="text-center my_title">
+                Rock Paper Scissors
+            </h1>
+        </header>
+        <main class=" my_container my_main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 d-flex flex-wrap ">
+                        <div class=" my_card-header d-flex my_bg-red">
+                            <h1 class="text-center ">Player 1</h1>
+                        </div>
+                        <div class="my_game-box"></div>
+
+                        <div class="container">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-2 ">
+                                    <button class="my_move-button btn btn-primary">
+                                        
+                                    </button>
+                                </div>
+                                <div class="col-2 ">
+                                    <button class="my_move-button btn btn-primary">
+                                        
+                                    </button>
+                                </div>
+                                <div class="col-2 ">
+                                    <button class="my_move-button btn btn-primary">
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex flex-wrap ">
+                        <div class=" my_card-header d-flex my_bg-red">
+                            <h1 class="text-center ">Computer</h1>
+                        </div>
+                        <div class="my_game-box"></div>
+
+                        <div class="container">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-2 ">
+                                    <button class="my_move-button btn btn-primary">
+                                        
+                                    </button>
+                                </div>
+                                <div class="col-2 ">
+                                    <button class="my_move-button btn btn-primary">
+                                        
+                                    </button>
+                                </div>
+                                <div class="col-2 ">
+                                    <button class="my_move-button btn btn-primary">
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- You win -->
+                    <div class="my_result my_win position-absolute invisible">
+                        <div class="my_result-content">
+                            <h3>You Win!</h3>
+                        </div>
+                    </div>
+
+                    <!-- You loose -->
+                    <div class="my_result my_loose position-absolute invisible">
+                        <div class="my_result-content">
+                            <h3>You Loose</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         <script type="text/javascript" src="script/my_script.js"></script>
     </body>
     
