@@ -43,12 +43,21 @@ div.my_card-header h1 {
 }
 
 .my_game-box {
+    position: relative;
     background-color: white;
     height: 500px;
     width: 100%;
     border-radius: 0 0 20px 20px;
     margin-bottom: 20px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding:
+        box-shadow: rgba(58, 58, 58, 0.2) 0px 2px 8px 0px;
+}
+
+.my_game-box img {
+    width: 80%;
+    height: 80%;
+
+    position: absolute;
 }
 
 .my_move-button {
@@ -57,6 +66,7 @@ div.my_card-header h1 {
     aspect-ratio: 1 / 1;
     border-radius: 12px;
     border: none;
+    padding: 10px;
 }
 
 .my_result {
