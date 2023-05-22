@@ -14,5 +14,5 @@ The computer will give a random answer to your choice and will appear a message 
 <img src="img/Screen.png" width="400px">
 <img src="img/Screen-1.png" width="400px">
 <img src="img/Screen-2.png" width="400px">
-<br><br>
+<br>
 <h3><strong>Have fun!</strong></h3>
