@@ -21,7 +21,7 @@ const drawMessage = document.querySelector('div.my_draw');
 
 // hand Illustrations
 
-const rockHand = document.querySelector('img.rock');
+const rockHand = document.querySelector('img.rock-stop');
 
 const rockHandSecond = document.querySelector('img.rock-end');
 
@@ -42,7 +42,7 @@ rockButton.addEventListener('click', function () {
     console.log('user play is rock');
     // Add user play value 
     userPlay = 1;
-    rockHand.classList.add('d-none');
+    rockHand.classList.remove('d-none');
     rockHandSecond.classList.remove('d-none');
     paperHand.classList.add('d-none');
     scissorsHand.classList.add('d-none');
