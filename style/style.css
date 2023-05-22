@@ -73,6 +73,14 @@ div.my_card-header h1 {
     padding: 10px;
 }
 
+.my_disabled-button {
+    background-color: #192445;
+}
+
+.my_disabled-button:hover {
+    background-color: #192445;
+}
+
 .my_invisible {
     visibility: hidden;
 }
