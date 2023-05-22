@@ -60,6 +60,10 @@ div.my_card-header h1 {
     position: absolute;
 }
 
+.my_game-box img.my_img-flipped {
+    transform: scaleX(-1);
+}
+
 .my_move-button {
     background-color: #192445;
     width: 100%;
