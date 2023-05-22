@@ -19,10 +19,33 @@ const looseMessage = document.querySelector('div.my_loose');
 
 const drawMessage = document.querySelector('div.my_draw');
 
+// hand Illustrations
+
+const rockHand = document.querySelector('img.rock');
+
+const rockHandSecond = document.querySelector('img.rock-end');
+
+const paperHand = document.querySelector('img.paper');
+
+const scissorsHand = document.querySelector('img.scissors');
+
+
+const rockPc = document.querySelector('img.rock.my_img-flipped');
+
+const rockPcSecond = document.querySelector('img.rock-end.my_img-flipped');
+
+const paperPc = document.querySelector('img.paper.my_img-flipped');
+
+const scissorsPc = document.querySelector('img.scissors.my_img-flipped');
+
 rockButton.addEventListener('click', function () {
     console.log('user play is rock');
     // Add user play value 
     userPlay = 1;
+    rockHand.classList.add('d-none');
+    rockHandSecond.classList.remove('d-none');
+    paperHand.classList.add('d-none');
+    scissorsHand.classList.add('d-none');
 
     // Add computer response 
     let computerPlay = parseInt(Math.floor(Math.random() * 3 + 1));
@@ -36,6 +59,12 @@ rockButton.addEventListener('click', function () {
         looseMessage.classList.remove('visible')
         drawMessage.classList.add('visible')
 
+        // Move Illustration 
+        rockPc.classList.add('d-none');
+        rockPcSecond.classList.remove('d-none');
+        paperPc.classList.add('d-none');
+        scissorsPc.classList.add('d-none');
+
     } else if (computerPlay === 2) {
         console.log('computer plays paper')
         console.log("Player Lose!")
@@ -44,6 +73,14 @@ rockButton.addEventListener('click', function () {
         winMessage.classList.remove('visible')
         looseMessage.classList.add('visible')
         drawMessage.classList.remove('visible')
+
+        // Move Illustration
+        rockPc.classList.add('d-none');
+        rockPcSecond.classList.add('d-none');
+        paperPc.classList.remove('d-none');
+        scissorsPc.classList.add('d-none');
+
+
     } else {
         console.log('computer plays scissors')
         console.log("Player Wins!")
@@ -52,6 +89,12 @@ rockButton.addEventListener('click', function () {
         winMessage.classList.add('visible')
         looseMessage.classList.remove('visible')
         drawMessage.classList.remove('visible')
+
+        // Move Illustration
+        rockPc.classList.add('d-none');
+        rockPcSecond.classList.add('d-none');
+        paperPc.classList.add('d-none');
+        scissorsPc.classList.remove('d-none');
     }
 
 })
@@ -61,6 +104,11 @@ paperButton.addEventListener('click', function () {
 
     // Add user play value 
     userPlay = 2;
+    rockHand.classList.add('d-none');
+    rockHandSecond.classList.add('d-none');
+    paperHand.classList.remove('d-none');
+    scissorsHand.classList.add('d-none');
+
 
     // Add computer response 
     let computerPlay = parseInt(Math.floor(Math.random() * 3 + 1));
@@ -74,6 +122,12 @@ paperButton.addEventListener('click', function () {
         winMessage.classList.add('visible')
         looseMessage.classList.remove('visible')
         drawMessage.classList.remove('visible')
+
+        // Move Illustration 
+        rockPc.classList.add('d-none');
+        rockPcSecond.classList.remove('d-none');
+        paperPc.classList.add('d-none');
+        scissorsPc.classList.add('d-none');
     } else if (computerPlay === 2) {
         console.log('computer plays paper')
         console.log("It's a Draw!")
@@ -82,6 +136,12 @@ paperButton.addEventListener('click', function () {
         winMessage.classList.remove('visible')
         looseMessage.classList.remove('visible')
         drawMessage.classList.add('visible')
+
+        // Move Illustration
+        rockPc.classList.add('d-none');
+        rockPcSecond.classList.add('d-none');
+        paperPc.classList.remove('d-none');
+        scissorsPc.classList.add('d-none');
     } else {
         console.log('computer plays scissors')
         console.log("Player Lose!")
@@ -91,7 +151,11 @@ paperButton.addEventListener('click', function () {
         looseMessage.classList.add('visible')
         drawMessage.classList.remove('visible')
 
-
+        // Move Illustration
+        rockPc.classList.add('d-none');
+        rockPcSecond.classList.add('d-none');
+        paperPc.classList.add('d-none');
+        scissorsPc.classList.remove('d-none');
     }
 })
 
@@ -100,6 +164,11 @@ scissorsButton.addEventListener('click', function () {
 
     // Add user play value 
     userPlay = 3;
+
+    rockHand.classList.add('d-none');
+    rockHandSecond.classList.add('d-none');
+    paperHand.classList.add('d-none');
+    scissorsHand.classList.remove('d-none');
 
     // Add computer response 
     let computerPlay = parseInt(Math.floor(Math.random() * 3 + 1));
@@ -113,6 +182,12 @@ scissorsButton.addEventListener('click', function () {
         winMessage.classList.remove('visible')
         looseMessage.classList.add('visible')
         drawMessage.classList.remove('visible')
+
+        // Move Illustration 
+        rockPc.classList.add('d-none');
+        rockPcSecond.classList.remove('d-none');
+        paperPc.classList.add('d-none');
+        scissorsPc.classList.add('d-none');
     } else if (computerPlay === 2) {
         console.log('computer plays paper')
         console.log("Player Wins!")
@@ -121,6 +196,12 @@ scissorsButton.addEventListener('click', function () {
         winMessage.classList.add('visible')
         looseMessage.classList.remove('visible')
         drawMessage.classList.remove('visible')
+
+        // Move Illustration
+        rockPc.classList.add('d-none');
+        rockPcSecond.classList.add('d-none');
+        paperPc.classList.remove('d-none');
+        scissorsPc.classList.add('d-none');
     } else {
         console.log('computer plays scissors')
         console.log("It's a Draw!")
@@ -129,6 +210,12 @@ scissorsButton.addEventListener('click', function () {
         winMessage.classList.remove('visible')
         looseMessage.classList.remove('visible')
         drawMessage.classList.add('visible')
+
+        // Move Illustration
+        rockPc.classList.add('d-none');
+        rockPcSecond.classList.add('d-none');
+        paperPc.classList.add('d-none');
+        scissorsPc.classList.remove('d-none');
     }
 
 })
